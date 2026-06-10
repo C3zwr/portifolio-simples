@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121214; 
+}
+
+.menu-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #1a1c23; 
+    border-bottom: 2px solid #2d313f; 
+}
+
+.menu-navegacao .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.menu-navegacao nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.menu-navegacao nav a:hover {
+    color: #94a3b8; 
+}
+
+.secao-comum {
+    padding: 80px 10%;
+    background-color: #121214; 
+    text-align: center;
+}
+
+.secao-detalhe {
+    padding: 80px 10%;
+    background-color: #1a1c23; 
+    text-align: center;
+    border-top: 1px solid #2d313f;
+    border-bottom: 1px solid #2d313f;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    margin-bottom: 40px;
+    color: #94a3b8; 
+    font-size: 1rem;
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+}
+
+.texto-sobre p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #cbd5e1; 
+}
+
+.foto-sobre img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2d313f;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.foto-sobre img:hover {
+    filter: brightness(0.8);
+    border-color: #ffffff;
+}
+
+.lista-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Multiplataforma: quebra linha em telas pequenas */
+}
+
+.cartao-projeto {
+    background-color: #121214; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: left;
+    border: 1px solid #2d313f;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.cartao-projeto:hover {
+    background-color: #090a0f; 
+    border-color: #475269;
+    transform: translateY(-2px);
+}
+
+.cartao-projeto img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.cartao-projeto h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.cartao-projeto p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.botao-projeto {
+    display: inline-block;
+    background-color: #1a1c23;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #2d313f;
+    transition: 0.3s ease;
+}
+
+.botao-projeto:hover {
+    background-color: #090a0f;
+    border-color: #ffffff;
+}
+
+/* --- SEÇÃO DE HABILIDADES --- */
+.bloco-habilidades {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.item-skill {
+    margin-bottom: 25px;
+}
+
+.texto-skill {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.label-nivel {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: normal;
+}
+
+.barra-preta-divisoria {
+    height: 2px;
+    background-color: #000000;
+    margin: 6px 0 10px 0;
+    border-radius: 2px;
+}
+
+.niveis-conhecimento {
+    display: flex;
+    gap: 8px;
+}
+
+.nivel {
+    height: 12px;
+    flex: 1; /* Garante tamanho fluido em qualquer largura de tela */
+    background-color: #000000; 
+    border: 1px solid #2d313f;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.nivel.ativo {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Caixa de Texto Permanente */
+#terminal-skills {
+    background-color: #090a0f;
+    border: 1px solid #2d313f;
+    border-left: 4px solid #94a3b8;
+    padding: 18px;
+    border-radius: 4px;
+    margin-top: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 80px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    font-style: italic;
+}
+
+/* Seção Contato */
+.conteudo-contato {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.mapa, .formulario-bloco {
+    flex: 1;
+    min-width: 280px;
+}
+
+.mapa iframe {
+    border-radius: 8px;
+    border: 1px solid #2d313f !important;
+    filter: invert(90%) hue-rotate(180deg);
+    margin-top: 15px;
+}
+
+.formulario-bloco h3, .mapa h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #121214;
+    border: 1px solid #2d313f;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.campo input:focus, .campo textarea:focus {
+    background-color: #090a0f;
+    border-color: #94a3b8;
+    outline: none;
+}
+
+.botao-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #121214;
+    border: 1px solid #2d313f;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #090a0f;
+    border-color: #ffffff;
+}
+
+.rodape {
+    background-color: #1a1c23;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    border-top: 1px solid #2d313f;
+}
+
+/* --- REGRAS DE ADAPTAÇÃO PARA CELULARES (MULTIPLATAFORMA) --- */
+@media (max-width: 768px) {
+    .menu-navegacao {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+    
+    .menu-navegacao nav a {
+        margin: 0 10px;
+        font-size: 0.95rem;
+    }
+
+    .secao-comum, .secao-detalhe {
+        padding: 50px 5%;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-sobre {
+        order: -1; 
+    }
+
+    .conteudo-contato {
+        flex-direction: column;
+    }
+}
