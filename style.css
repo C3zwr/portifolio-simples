@@ -325,3 +325,49 @@ h2 {
         flex-direction: column;
     }
 }
+
+/* --- PROJETO DESTAQUE: FLORA CONCEPTUS --- */
+.projeto-destaque {
+    background-color: #121214;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid #2d313f;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    margin-top: 60px; /* Dá um espaço entre os 3 projetos de cima e este */
+    text-align: center;
+}
+
+.projeto-destaque h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.projeto-destaque p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.galeria-flora {
+    display: flex;
+    flex-wrap: wrap; /* Faz as imagens quebrarem de linha no celular */
+    gap: 15px;
+    justify-content: center;
+}
+
+.galeria-flora img {
+    flex: 1;
+    min-width: 200px; /* Tamanho mínimo para não ficar invisível no celular */
+    max-width: 300px; /* Tamanho máximo para o PC */
+    height: 200px;
+    object-fit: cover; /* Corta e ajusta a imagem de forma inteligente */
+    border-radius: 6px;
+    border: 1px solid #2d313f;
+    transition: 0.3s ease;
+}
+
+.galeria-flora img:hover {
+    transform: scale(1.05); /* Dá um pequeno zoom ao passar o mouse */
+    border-color: #94a3b8;
+}
